@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: jenkins-agent
   become: true
   roles:
    - ../roles/setup-jenkins-agent

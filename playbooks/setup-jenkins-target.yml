@@ -1,0 +1,4 @@
+- hosts: jenkins-target
+  become: true
+  roles:
+   - ../roles/setup-jenkins-target
