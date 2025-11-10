@@ -30,7 +30,7 @@
 - name: Fetch pub key from agent to main host
   fetch:
     src: /home/jenkins/.ssh/id_ed25519.pub
-    dest: /home/ivan/fetched_keys/{{ inventory_hostname }}-jenkins.pub
+    dest: /home/ivan/agent_keys/{{ inventory_hostname }}-jenkins.pub
     flat: yes
 
 - name: Add pub-key jenkins
